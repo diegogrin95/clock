@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css"
+          href="https://fonts.googleapis.com/css?family=Lato">
+    <title>Registrate</title>
+  </head>
+
+<body>
+  <main>
+    <header>
+      <!-- Barra de navegación -->
+      <nav class="navigation">
+
+        <ul class="navigation-menu">
+          <!-- Sacamos estas categorías por ahora
+          <li><a href="#" class="navigation-menu-link">Hombres</a></li>
+          <li><a href="#" class="navigation-menu-link">Mujeres</a></li>
+          <li><a href="#" class="navigation-menu-link">Marcas</a></li>
+          -->
+          <li><a href="home.html" class="navigation-user-logo">
+            <img src="icons/logo.png" alt="Logo"></a>
+          </li>
+        </ul>
+
+        <ul class="navigation-user">
+          <li><a href="ingresa.php" class="navigation-user-link">Ingresá</a></li>
+          <!-- Saco el icon por el momento
+          <li><a href="#" class="navigation-user-link">
+            <img src="icons/user.png" alt="User" class="navigation-icons"></a>
+          </li> -->
+          <li><a href="ayuda.html" class="navigation-menu-link">Ayuda</a></li>
+        </ul>
+
+      </nav>
+    </header>
+
+    <!-- Form -->
+    <section class="bkg-register">
+    <div class="register">
+      <h2>Registrate</h2>
+      <form>
+        <label>Nombre</label>
+        <input type="text" name="nombre" required="nombre" placeholder="Ingresa tu nombre">
+        <label>Apellido</label>
+        <input type="text" name="apellido" required="apeliido" placeholder="Ingresa tu apellido">
+        <label>E-mail</label>
+        <input type="email" name="mail" required="mail" placeholder="Ingresa tu e-mail">
+        <label>Crea una contraseña</label>
+        <input type="password" name="contraseña" required="password" placeholder="Ingresa entre 6 y 10 caracteres">
+        <button type="submit">Registrarme</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  </main>
+</body>
+
+</html>

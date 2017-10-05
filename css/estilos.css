@@ -1,0 +1,428 @@
+body  { margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Barra de navegación */
+.navigation {
+  width: 100%;
+}
+
+.navigation-user {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  text-align: center;
+}
+
+.navigation-user li {
+  display: inline-block;
+  padding: 13px 32px 13px 32px;
+}
+
+.navigation-user li a {
+  display: block;
+  text-decoration: none;
+}
+
+.navigation-user-link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.navigation-icons {
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navigation-user-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #666;
+  text-align: center;
+ }
+
+ .navigation-menu li {
+   display: inline-block;
+   padding: 13px 12px 13px 12px;
+ }
+
+ .navigation-menu li a {
+   text-decoration: none;
+   display: block;
+ }
+
+.navigation-menu-link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+/* Banner principal*/
+.main-banner {
+  background-image: url(../images/image_1.png);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+  width: 100%;
+  text-indent: -400px;
+}
+
+/* Categorías*/
+.categories-text {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.categories-text h2 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #333;
+  margin: 10px;
+}
+
+.categories-text a{
+   font-size: 14px;
+   font-weight:600;
+   color: #333;
+   margin-top: 24px;
+}
+
+.categories-images{
+  width: 100%;
+  text-align: center;
+}
+.categories-images a {
+  display: inline-block;
+  padding: 32px;
+}
+
+/* Banner de sale */
+.sale-banner {
+  background-image: url(../images/image_5_responsive.png);
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  text-indent: -400px;
+  margin-top: 32px;
+}
+
+/* Formulario: Ingresá */
+.foto-banner {
+  background-image: url(../images/image_8_responsive.png);
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  text-indent: -400px;
+}
+
+.form {
+  padding: 8px 32px 32px 32px;
+}
+
+.form h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  padding-bottom: 16px;
+}
+.form h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+
+.form a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #3483FA;
+  text-decoration: none;
+  float: right;
+}
+
+.form input::placeholder {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #999;
+}
+
+.form input[type=text] {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.form input[type=password] {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  margin-bottom: 32px;
+}
+
+.form input[type=checkbox] {
+  margin-bottom: 32px;
+}
+
+.form input:focus {
+  border-bottom: 2px solid #3483FA;
+}
+
+.form button[type=submit] {
+  width: 100%;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+
+}
+
+/* Formulario: Registrate */
+.register {
+  padding: 8px 32px 32px 32px;
+}
+
+.register h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.register input::placeholder {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #999;
+}
+
+.register input[type=text] {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 32px;
+  background: initial;
+}
+
+.register input[type=email] {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  margin-bottom: 32px;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  font-size: 16px;
+  background: initial;
+}
+
+.register input[type=password] {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  margin-bottom: 32px;
+  background: initial;
+}
+
+.register input:focus {
+  border-bottom: 2px solid #3483FA;
+}
+
+.register button[type=submit] {
+  width: 100%;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+
+}
+
+/* Ayuda */
+.bkg-ayuda h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.ayuda h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.ayuda p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+}
+
+
+/* Media query para tablet y desktop*/
+@media (min-width: 720px){
+.navigation {
+  position: absolute;
+  background-color: #000;
+}
+.navigation-user {
+  position: relative;
+  float: right;
+  margin: 0 auto;
+  margin-right: 48px;
+}
+.navigation-menu {
+  position: relative;
+  float: left;
+  margin: 0 auto;
+  background-color: #000;
+  margin-left: 48px;
+}
+.categories-text h2 {
+  font-size: 32px;
+}
+.categories-text a{
+  font-size: 16px;
+}
+.sale-banner {
+  background-image: url(../images/image_5.png);
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-indent: -400px;
+}
+.foto-banner {
+  background-image: url(../images/image_8.png);
+  height: 250px;
+  text-indent: -400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.form {
+  margin: 0 auto;
+  width: 500px;
+
+}
+.form h2 {
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+.form h3 {
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+.register {
+  margin: 0 auto;
+  padding-top: 16px;
+  width: 600px;
+}
+.register form{
+  padding: 32px 32px 32px 32px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.register h2 {
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  font-size: 32px;
+}
+.bkg-register {
+  background-image: url(../images/image_7-bkg.jpg);
+}
+
+.bkg-ayuda {
+  background-color: #ddd;
+}
+.ayuda {
+  margin: 0 auto;
+  padding: 32px 32px 32px 32px;
+  background-color: #fff;
+  border: 1px solid #999;
+  width: 70%;
+}
+.bkg-ayuda h2 {
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 32px;
+  font-size: 24px;
+}

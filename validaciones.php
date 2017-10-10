@@ -1,7 +1,6 @@
 <?php
   function validarDatos($datosUsuario) {
       $errores = [];
-
       if (strlen($datosUsuario['nombre']) < 2) {
         $errores['nombre'] = "Ingresá un nombre mayor a 1 letra.";
       }
@@ -66,7 +65,6 @@ function subirFoto($nuevoUsuario){
   }
  return $errores;
 }
-
 function validarDatosLogin($datosUsuarioLogin) {
     $erroresLogin = [];
     if (!filter_var($datosUsuarioLogin['email'], FILTER_VALIDATE_EMAIL)){
@@ -79,11 +77,9 @@ function validarDatosLogin($datosUsuarioLogin) {
     }
     return $erroresLogin;
   }
-
   function buscarUsuarioEnElFile($email, $contrasena) {
     return array('nombre' =>  "$nuevoUsuario");
   }
-
 /*
         $jsonUser = json_encode([
           "nombre" => $nombre,

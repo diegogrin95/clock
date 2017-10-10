@@ -6,9 +6,7 @@ $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : "";
 $apellido = isset($_POST['apellido']) ? $_POST['apellido'] : "";
 $email = isset($_POST['email']) ? $_POST['email'] : "";
 $contrasena = isset($_POST['contrasena']) ? $_POST['contrasena'] : "";
-
 $errores = [];
-
 if ($_POST){
   $errores = validarDatos($_POST);
   if (count($errores) == 0) {
@@ -40,10 +38,8 @@ if ($fueCompletado) {
         echo "Se guardo bien";
       }
  }*/
-
 ?>
 <!doctype html>
-
 <html>
   <head>
     <meta charset="utf-8">
@@ -52,12 +48,10 @@ if ($fueCompletado) {
           href="https://fonts.googleapis.com/css?family=Lato">
     <title>Registrate</title>
   </head>
-
 <body>
   <main>
     <?php require_once "header.php"; ?>
     <input type='hidden' name='submitted' id='submitted' value='1'/>
-
 
     <!-- Form -->
     <section class="bkg-register">
@@ -84,7 +78,6 @@ if ($fueCompletado) {
         <label for='username'>Avatar:</label><br/>
         <input type='file' name='avatar'><br>
         <button type="submit">Registrarme</button>
-
       </form>
     </div>
   </section>

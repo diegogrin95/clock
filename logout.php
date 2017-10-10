@@ -1,9 +1,6 @@
 <?php
-
-session_destroy ();
-//session_unset();
-//ob_start();
-header('Location: home.php');
-//ob_end_flush();
-exit();
+session_start();
+session_unset();
+session_destroy();
+header("location:home.php");
 ?>

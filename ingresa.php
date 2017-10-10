@@ -1,10 +1,8 @@
 <?php
 
 include "validaciones.php";
-
 $email = isset($_POST['email']) ? $_POST['email'] : "";
 $contrasena = isset($_POST['contrasena']) ? $_POST['contrasena'] : "";
-
 $erroresLogin = [];
 
 if ($_POST["submitted"] == 1) {
@@ -42,7 +40,6 @@ echo $_SESSION['login_user'];
     }
   }*/
   ?>
-
 <!doctype html>
 <html>
   <head>
@@ -55,10 +52,8 @@ echo $_SESSION['login_user'];
 <body>
   <main>
     <?php include "header.php"; ?>
-
     <!-- Foto -->
     <div class="foto-banner">Imagen principal</div>
-
     <!-- Form -->
     <div class="form">
       <h2>¡Hola! Ingresá tu usuario y contraseña</h2>

@@ -1,21 +1,12 @@
 <?php
 
-require_once "validaciones.php";
-
-$dsn = 'mysql:host=localhost,dbname=new_schema;charset=utf8mb4;port:3306';
-$db_user = 'root';
-$db_pass = '1234;'
-$db = new PDO($dsn,$db_user,$db_pass);
-
-$sql = "INSERT INTO users(id, nombre, apellido, mail, password) VALUES ()";
-$query = $db->prepare($sql);
-$query->execute();
-$db = null;
-
+include "validaciones.php";
 
 $email = isset($_POST['email']) ? $_POST['email'] : "";
 $contrasena = isset($_POST['contrasena']) ? $_POST['contrasena'] : "";
+
 $erroresLogin = [];
+
 if ($_POST["submitted"] == 1) {
     $erroresLogin = validarDatosLogin(array("email" => $email, "contrasena" => $contrasena));
     if (empty($erroresLogin)) {
@@ -51,6 +42,7 @@ echo $_SESSION['login_user'];
     }
   }*/
   ?>
+
 <!doctype html>
 <html>
   <head>

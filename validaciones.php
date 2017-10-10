@@ -1,5 +1,4 @@
 <?php
-
   function validarDatos($datosUsuario) {
       $errores = [];
 
@@ -7,13 +6,13 @@
         $errores['nombre'] = "Ingresá un nombre mayor a 1 letra.";
       }
       if (!ctype_alpha($datosUsuario['nombre'])) {
-        $errores['nombre'] = "Ingresá un nombre solo letras.";
+        $errores['nombre'] = "Ingresá solo letras.";
       }
       if (strlen($datosUsuario['apellido']) < 2) {
         $errores['apellido'] = "Ingresá un apellido mayor a 1 letra.";
       }
       if (!ctype_alpha($datosUsuario['apellido'])) {
-        $errores['apellido'] = "Ingresá un apellido solo letras.";
+        $errores['apellido'] = "Ingresá solo letras.";
       }
       if (!filter_var($datosUsuario['email'], FILTER_VALIDATE_EMAIL)){
         $errores['email'] = "Completá el mail.";
@@ -82,7 +81,7 @@ function validarDatosLogin($datosUsuarioLogin) {
   }
 
   function buscarUsuarioEnElFile($email, $contrasena) {
-    return array('nombre' =>  "$usuario");
+    return array('nombre' =>  "$nuevoUsuario");
   }
 
 /*

@@ -3,10 +3,10 @@
   function guardarUsuario($nombre, $apellido, $email, $contraseña){
 
     $errores = validarDatos(array(
-      private "nombre" => $nombre,
-      private "apellido" => $apellido,
-      private "email" => $email,
-      private "contraseña" => $contraseña,
+      "nombre" => $nombre,
+      "apellido" => $apellido,
+      "email" => $email,
+      "contraseña" => $contraseña,
     ));
 
     var_dump($errores);

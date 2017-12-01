@@ -16,7 +16,7 @@
     <!-- Categorías -->
     <div class="categories-text">
       <h2>¿CUÁL ES TU ESTILO?</h2>
-      <a class="block-text">Elegí el que más se adapte a vos tu vieja</a>
+      <a class="block-text">Elegí el que más se adapte a vos</a>
     </div>
       <div class="categories-images">
         <a><img src="images/image_2.1.png" alt="Reloj 1"></a>

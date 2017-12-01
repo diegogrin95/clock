@@ -1,7 +1,5 @@
-<?php
-session_start();
-$_SESSION["logged_in"] = true;?>
-<header>
+<?php require_once("soporte.php"); ?>
+<header id="header">
   <!-- Barra de navegación -->
   <nav class="navigation">
     <ul class="navigation-menu">
@@ -10,23 +8,21 @@ $_SESSION["logged_in"] = true;?>
       </li>
     </ul>
     <ul class="navigation-user">
-
       <?php
-      session_start();
-      if($_SESSION["logged"]):;?>
-        <?php $nickname= $_SESSION['nombre']; ?>
-        <li><a class="navigation-user-link">Bienvenido, <?php echo $nickname?></a></li>
+      if(!$auth->estaLogueado()) : ?>
+      <li><a href="ingresa.php" class="navigation-user-link">Ingresá</a></li>
+      <li><a href="registrate.php" class="navigation-menu-link">Registrate</a></li>
+      <li><a href="ayuda.php" class="navigation-menu-link">Ayuda</a></li>
+      <?php endif; ?>
+
+      <?php if ($auth->estaLogueado()) : ?>
+        <li>
+          <span class="navigation-menu-link">Bienvenido <?=$auth->obtenerUsuarioLogueado($db)->getNombre()?>
+        </span></li>
         <li><a href="logout.php" class="navigation-user-link">Salir</a></li>
         <li><a href="ayuda.php" class="navigation-menu-link">Ayuda</a></li>
-        <?php header ("Location:ayuda.php")?>
-      <?php else: ?>
-        <li><a href="ingresa.php" class="navigation-user-link">Ingresá</a></li>
-        <li><a href="registrate.php" class="navigation-menu-link">Registrate</a></li>
-        <li><a href="ayuda.php" class="navigation-menu-link">Ayuda</a></li>
-
-
-
       <?php endif; ?>
+
     </ul>
   </nav>
 </header>

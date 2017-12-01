@@ -1,6 +1,5 @@
 <?php
-session_start();
-session_unset();
-session_destroy();
-header("location:home.php");
+include_once("soporte.php");
+$auth->logout();
+header("Location:home.php");exit;
 ?>

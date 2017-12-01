@@ -29,7 +29,7 @@
           <iframe class="video" src="https://www.youtube.com/embed/k7lFqIr6KgY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
-<p>hola</p>
+
       <br>
       <div>
         <p id="flower">Como vivis tu vida depende de vos, hace valer tu tiempo.</p>
